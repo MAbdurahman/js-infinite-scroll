@@ -64,15 +64,21 @@ $(function () {
                 src: photo.urls.regular,
                 alt: photo.alt_description,
                 loading: 'lazy',
-                title: photo.alt_description,
+                /*title: photo.alt_description,*/
             });
+            anchorElement.classList.add('tooltip');
+
+            const spanElement = document.createElement('span');
+            spanElement.classList.add('tooltip-text');
+            spanElement.innerHTML = photo.alt_description;
 
             imageElement.addEventListener('load', hasImageCompletedLoading);
+
+            anchorElement.appendChild(spanElement);
             anchorElement.appendChild(imageElement);
             image_container.appendChild(anchorElement);
 
         })
-
     }
 
     /**
@@ -83,7 +89,6 @@ $(function () {
         try {
             const response = await fetch(API_URL);
             photos_array = await response.json();
-            console.log(photos_array)
             displayPhotos();
         } catch (e) {
             swal({
