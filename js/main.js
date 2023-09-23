@@ -7,6 +7,9 @@ $(window).on('load', function () {
     });
 });
 
+/*=============================================
+          js-infinite-scroll scripts
+================================================*/
 $(function () {
     //**************** variables ****************//
     const image_container = document.getElementById('image__container');
@@ -63,8 +66,7 @@ $(function () {
             setAttributes(imageElement, {
                 src: photo.urls.regular,
                 alt: photo.alt_description,
-                loading: 'lazy',
-                /*title: photo.alt_description,*/
+                loading: 'lazy'
             });
             anchorElement.classList.add('tooltip');
 

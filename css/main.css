@@ -72,9 +72,7 @@ img {
     --tf-timing-function-smooth: cubic-bezier(0.1, 0.7, 0.6, 0.9);
     --tf-timing-function-snappy: cubic-bezier(0.5, 0, 0.4, 0.98);
 
-
 }
-
 
 /* Large Devices (Desktops & Laptops) */
 @media (min-width: 1200px) and (max-width: 1299px) {
@@ -84,7 +82,6 @@ img {
 
 }
 
-
 /* Medium Devices (Landscape Tablets & Medium Desktops) */
 @media (min-width: 992px) and (max-width: 1199px) {
     html {
@@ -93,14 +90,12 @@ img {
 
 }
 
-
 /* Small Devices (Portrait Tablets & Small Desktops) */
 @media (min-width: 768px) and (max-width: 991px) {
         html {
             font-size: 80%;
         }
 }
-
 
 /* Extra Small Devices (Landscape Phones & Portrait Tablets) */
 @media (max-width: 767px) {
@@ -110,7 +105,6 @@ img {
 
 }
 
-
 /* Extra Small Devices (Portrait Phones & Smaller Devices) */
 @media (max-width: 480px) {
         html {
@@ -118,7 +112,6 @@ img {
         }
 
 }
-
 
 /* Extra Small Devices (Portrait Phones & Smaller Devices) */
 @media (max-width: 320px) {
@@ -143,8 +136,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: radial-gradient(circle, #476f95 28%, #476f95 100%);
-    background-image: radial-gradient(circle, #aebfd0 28%, #aebfd0 100%);
     background-image: radial-gradient(circle, #999999 28%, #999999 100%);
     display: -webkit-box;
     display: flex;
@@ -167,14 +158,12 @@ body {
 }
 
 /*=============================================
-
+        h1 - h6 and p tags styles
 ================================================*/
 
 h1, h2, h3, h4, h5, h6 {
     margin: 3rem 0 1.38rem;
     font-family: var(--ff-font-primary);
-
-    /*font-weight: var(--fw-font-weight-500);*/
     line-height: 1.3;
     color: var(--clr-monochrome-500);
 }
@@ -182,38 +171,31 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     margin-top: 0;
     font-size: 5rem;
-    /*font-weight: var(--fw-font-weight-400);*/
     letter-spacing: -0.5px;
 }
 
 h2 {
     font-size: 3.125rem;
-    /*font-weight: var(--fw-font-weight-500);*/
     letter-spacing: 1px;
 }
 
 h3 {
     font-size: 2.375rem;
-    /*font-weight: var(--fw-font-weight-500);*/
     letter-spacing: 2px;
 }
 
-
 h4 {
     font-size: 1.875rem;
-    /*font-weight: var(--fw-font-weight-500);*/
     letter-spacing: 2px;
 }
 
 h5 {
     font-size: 1.5rem;
-    /*font-weight: var(--fw-font-weight-500);*/
     letter-spacing: 2px;
 }
 
 h6 {
     font-size: 1.25rem;
-    /*font-weight: var(--fw-font-weight-500);*/
     letter-spacing: 2px;
 }
 
@@ -224,16 +206,10 @@ p {
 .text-center {
     text-align: center;
 }
-.title {
-    /*margin-top: 1em;
-    margin-bottom: .9em;*/
-    background-color: var(--clr-neutral-200);
-    color: var(--clr-neutral-700);
-    box-shadow: 0 3px 2px -2px rgb(128, 128, 128);
 
-
-}
-
+/*=============================================
+         wrapper and title__wrapper styles
+================================================*/
 .wrapper {
     width: 100%;
     margin-left: auto;
@@ -276,52 +252,28 @@ p {
     width: 100vw;
     max-width: 100vw;
     z-index: 10;
-/*    margin-left: auto;
-    margin-right: auto;*/
-    /*padding-left: 16px;
-    padding-right: 16px;*/
 }
 
 /*=============================================
-          loader styles
+        title and image container styles
 ================================================*/
-.loader {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /*background: rgba(255, 255, 255, 0.8);*/
-    background: rgba(174, 191, 208, 0.8);
-}
-.loader__img {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-/*=============================================
-        image container
-================================================*/
-/*
-.image__container {
-    margin: 12px auto;
-}
-.image__container > img {
-    width: 100%;
-    margin-top: 5px;
-}*/
 .section__title {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    /*min-width: 100vw;*/
     max-height: 80px;
     border: 0;
     outline: 0;
+}
+
+.title {
+    background-color: var(--clr-neutral-200);
+    color: var(--clr-neutral-700);
+    box-shadow: 0 3px 2px -2px rgb(128, 128, 128);
+
 }
 
 .img__container {
